@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Spark｜英语学习网站</title>
+    <meta
+      name="description"
+      content="一个面向中文用户的英语学习网站，包含AI/GitHub高频词汇、每日学习计划、听说读写练习和互动测验。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="#hero" aria-label="English Spark 首页">
+          <span class="brand-mark">ES</span>
+          <span>English Spark</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">打开菜单</span>
+          ☰
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#courses">课程</a>
+          <a href="#vocabulary">词汇</a>
+          <a href="#practice">练习</a>
+          <a href="#plan">计划</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Learn English for tech, work and life</p>
+          <h1>每天 20 分钟，把英语学成你的新技能。</h1>
+          <p class="hero-copy">
+            从 GitHub、AI 和职场高频表达开始，用词汇卡片、情景对话、听说读写任务和小测验建立稳定学习节奏。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#practice">开始练习</a>
+            <a class="button secondary" href="#vocabulary">查看高频词</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="今日学习目标">
+          <p>今日目标</p>
+          <strong>12 个单词 · 1 段对话 · 1 次测验</strong>
+          <div class="progress" aria-label="学习进度 68%">
+            <span style="width: 68%"></span>
+          </div>
+          <small>连续学习 7 天即可解锁第一枚徽章。</small>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section stats" aria-label="学习数据">
+        <article>
+          <strong>120+</strong>
+          <span>科技英语词条</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>核心能力模块</span>
+        </article>
+        <article>
+          <strong>20min</strong>
+          <span>每日轻量计划</span>
+        </article>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Path</p>
+          <h2>清晰的英语学习路线</h2>
+          <p>按照「输入 → 理解 → 输出 → 复盘」设计，适合零基础到进阶学习者。</p>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <span class="icon">🎧</span>
+            <h3>听力 Listening</h3>
+            <p>用慢速短句和真实工作场景训练关键词捕捉能力。</p>
+          </article>
+          <article class="course-card">
+            <span class="icon">💬</span>
+            <h3>口语 Speaking</h3>
+            <p>围绕自我介绍、会议、代码评审等主题练习可复用句型。</p>
+          </article>
+          <article class="course-card">
+            <span class="icon">📖</span>
+            <h3>阅读 Reading</h3>
+            <p>拆解 README、Issue、Pull Request 和 AI 文档常见表达。</p>
+          </article>
+          <article class="course-card">
+            <span class="icon">✍️</span>
+            <h3>写作 Writing</h3>
+            <p>学习写英文评论、邮件、日报和项目说明的模板。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="vocabulary">
+        <div>
+          <p class="eyebrow">Vocabulary Cards</p>
+          <h2>AI 与 GitHub 高频词汇</h2>
+          <p>
+            点击卡片可以翻转查看释义。先熟悉技术社区常见词，再把它们放进真实句子里使用。
+          </p>
+        </div>
+        <div class="cards" aria-label="英语词汇卡片">
+          <button class="word-card" type="button">
+            <span class="word">repository</span>
+            <span class="meaning">仓库：存放项目代码和文件的地方。</span>
+          </button>
+          <button class="word-card" type="button">
+            <span class="word">issue</span>
+            <span class="meaning">议题：记录 Bug、建议或待办事项。</span>
+          </button>
+          <button class="word-card" type="button">
+            <span class="word">pull request</span>
+            <span class="meaning">拉取请求：提交代码合并申请或进行代码审查。</span>
+          </button>
+          <button class="word-card" type="button">
+            <span class="word">prompt</span>
+            <span class="meaning">提示词：给 AI 的问题、任务或上下文指令。</span>
+          </button>
+          <button class="word-card" type="button">
+            <span class="word">workflow</span>
+            <span class="meaning">工作流：完成某项任务的一系列步骤。</span>
+          </button>
+          <button class="word-card" type="button">
+            <span class="word">deployment</span>
+            <span class="meaning">部署：把应用发布到可访问环境。</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section practice" id="practice">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Practice</p>
+          <h2>3 分钟互动小测验</h2>
+          <p>选择正确释义，系统会即时反馈并记录得分。</p>
+        </div>
+        <div class="quiz-panel">
+          <div>
+            <p class="quiz-label">当前单词</p>
+            <h3 id="quiz-word">repository</h3>
+            <p id="quiz-feedback" class="feedback" aria-live="polite">请选择一个答案。</p>
+          </div>
+          <div class="quiz-options" id="quiz-options"></div>
+          <div class="quiz-footer">
+            <span id="quiz-score">得分：0 / 0</span>
+            <button class="button primary" id="next-question" type="button">下一题</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section plan" id="plan">
+        <div class="section-heading">
+          <p class="eyebrow">Daily Plan</p>
+          <h2>适合坚持的每日学习计划</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <strong>5 分钟：复习词汇</strong>
+            <span>朗读昨天学过的 10 个词，并造 2 个句子。</span>
+          </li>
+          <li>
+            <strong>8 分钟：阅读短文</strong>
+            <span>阅读一段项目说明或 AI 新闻摘要，标记不懂的表达。</span>
+          </li>
+          <li>
+            <strong>5 分钟：口语输出</strong>
+            <span>用英文复述今天学到的内容，可以先照模板说。</span>
+          </li>
+          <li>
+            <strong>2 分钟：记录复盘</strong>
+            <span>写下一个新词、一个句型和一个明天要解决的问题。</span>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>English Spark © 2026 · Keep learning, keep shipping.</p>
+      <a href="#hero">回到顶部 ↑</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
